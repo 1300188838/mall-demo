@@ -25,19 +25,21 @@
 </script>
 
 <style scoped>
- .recommend {
-   display: flex;
-   text-align: center;
-   font-size: 12px;
-   padding: 10px 0px 20px;
-   border-bottom: 10px solid #EEEEEE;
- }
- .recommend-item {
-   flex: 1;
- }
- .recommend-item img {
-   width: 70px;
-   height: 70px;
-   margin-bottom: 10px;
- }
+  .recommend {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0px 20px;
+    border-bottom: 10px solid #EEEEEE;
+  }
+
+  .recommend-item {
+    flex: 1;
+  }
+
+  .recommend-item img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
 </style>

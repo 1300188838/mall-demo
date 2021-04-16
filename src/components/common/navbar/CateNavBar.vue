@@ -1,10 +1,10 @@
 <template>
   <div class="cate-nav-bar">
     <div
-         :class="{active: index === currentIndex}"
-         v-for="(item,index) in cateList"
-         @click="itemClick(index)"
-         :key="index" >
+      :class="{active: index === currentIndex}"
+      v-for="(item,index) in cateList"
+      @click="itemClick(index)"
+      :key="index">
       <slot>{{item}}</slot>
     </div>
   </div>
@@ -27,7 +27,7 @@
     },
     methods: {
       itemClick(index) {
-        this.$emit("itemClick",index)
+        this.$emit("itemClick", index)
       }
     }
   }
@@ -42,6 +42,7 @@
     background-color: #f6f6f6;
     width: 80px;
   }
+
   .cate-nav-bar div {
     height: 50px;
     font-variant: normal;
@@ -49,6 +50,7 @@
     text-align: center;
     font-size: 14px;
   }
+
   .active {
     background-color: #fff;
     color: #ff0000;

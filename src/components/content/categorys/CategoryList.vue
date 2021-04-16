@@ -10,6 +10,7 @@
 <script>
 
   import CategoryListItem from "./CategoryListItem";
+
   export default {
     name: "CategoryList",
     props: {

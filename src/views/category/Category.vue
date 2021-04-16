@@ -14,7 +14,7 @@
       @finishPullUp="finishPullUp">
       <cate-nav-bar :cateList="cateList"
                     @itemClick="itemClick"
-                    :currentIndex="currentIndex" />
+                    :currentIndex="currentIndex"/>
       <category-list :goods="goods"/>
     </scroll>
 
@@ -29,6 +29,7 @@
 
   import allGoods from './category.shop'
   import Scroll from "../../components/common/scroll/Scroll";
+
   export default {
     name: "Category",
     data() {
@@ -45,10 +46,10 @@
       CategoryList
     },
     created() {
-       this.getTypeShoping(allGoods)
+      this.getTypeShoping(allGoods)
     },
     mounted() {
-      this.$bus.$on('itemImgLoad',()=>{
+      this.$bus.$on('itemImgLoad', () => {
         this.$refs.categoryScroll.refresh()
         console.log(this.$refs.categoryScroll.getscrollHeight);
       })
@@ -88,6 +89,7 @@
     top: 0;
     z-index: 9;
   }
+
   .content {
     /*overflow: hidden;*/
 

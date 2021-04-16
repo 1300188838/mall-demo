@@ -44,7 +44,8 @@
     margin-left: 2px;
     margin-right: 2px;
   }
-  .cate-item img{
+
+  .cate-item img {
     width: 80px;
     height: 80px;
   }
